@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[url('https://picsum.photos/1024')] bg-cover bg-center;
+}
+
+.main-container {
+  @apply container mx-auto w-full h-screen flex justify-center items-center;
+}
+
+.box {
+  @apply bg-white p-7 rounded text-center shadow-[0_0_20px_#0009] max-w-[400px];
+}
+
+.btn {
+  @apply bg-blue-700 text-white px-20 py-2 mt-7 rounded hover:bg-blue-800;
+}
+
+.btn:hover {
+  animation: rubberBand 0.5s;
+}
